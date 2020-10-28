@@ -1,0 +1,6 @@
+{
+    "name": "PMG Linker",
+    "version": "1.0",
+    "description": "Demo extension that linkifies PMG clients on the web and provides a quick bookmark to client sites.",
+    "manifest_version": 2
+  }
