@@ -20,7 +20,7 @@ const brands = [
     {name: "House-Autry", url: "https://quenchagency.com/work/house-autry/"}
 ]
 
-let textNodes = document.getElementsByTagName('*');
+let nodes = document.querySelectorAll('p,span,li')
 
 // *** FUNCTIONS ***
 
@@ -30,4 +30,10 @@ function generateLinkElement(brandObject){
 
 // *** SCRIPT ***
 
-console.log(textNodes);
+nodes.forEach(node => {
+    if (node.innerHTML.includes("Yuengling")) {
+        node.innerHTML = node.innerHTML.replaceAll("Yuengling", `${generateLinkElement(brands[0])}`);
+    }
+});
+
+console.log(nodes);
