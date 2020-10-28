@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PMG Linker</title>
+    <style>
+        .link-container {
+            background-color: black;
+            margin: 2px;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
 </head>
 <body>
     <header>PMG Linker</header>
     <p>Quick links to PMG Brand websites!</p>
     <div class="links-wrapper">
-        <li class="links-list">
-            <ul class="links-item">
-                <a href="https://quenchagency.com/work/yuengling/" target="blank">Yeungling</a>
-            </ul>
-        </li>
+        <ul class="links-list">
+            <li class="links-item">
+                <div class="link-container">
+                    <a href="https://quenchagency.com/work/yuengling/" target="blank">
+                        <img src="./img/yuengling.png" height="50px" width="50px">
+                    </a>
+                </div>
+            </li>
+            <li class="links-item">
+                <div class="link-container">
+                    <a href="https://quenchagency.com/work/turkey-hill/" target="blank">
+                        <img src="./img/turkey-hill.png" height="50px" width="50px">
+                    </a>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
