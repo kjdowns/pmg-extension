@@ -1,3 +1,33 @@
-const brands = ["Yuengling", "Turkey Hill", "StarKist", "Mrs. T's", "Ortega", "Mrs Dash", "Hoss's Family", "Big Hill Ciderworks", "Cream of Wheat", "Foxy Organic", 
-                "Ahold", "Hershey", "Jarlsberg", "Herr's", "Labatt Blue", "Seagram's", "Sun Maid", "Del Monte", "House-Autry", "Lucky Leaf", "Musselman's", "Oddly-Good",
-                "Red Rose", "Salada", "Weis", "McMann's", "Bimbo"]
+// *** VARIABLES ***
+
+// Array of brand objects with name and url properties
+const brands = [
+    {name: "Yuengling", url: "https://quenchagency.com/work/yuengling/"},
+    {name: "Turkey Hill", url: "https://quenchagency.com/work/turkey-hill/"},
+    {name: "StarKist", url: "https://quenchagency.com/work/starkist/"},
+    {name: "Mrs. T's", url: "https://quenchagency.com/work/mrs-ts/"},
+    {name: "Ortega", url: "https://quenchagency.com/work/ortega/"},
+    {name: "Mrs Dash", url: "https://quenchagency.com/work/mrs-dash/"},
+    {name: "Hoss's Family", url: "https://quenchagency.com/work/hosss/"},
+    {name: "Big Hill Ciderworks", url: "https://quenchagency.com/work/big-hill-ciderworks/"},
+    {name: "Cream of Wheat", url: "https://quenchagency.com/work/cream-of-wheat/"},
+    {name: "Foxy Organic", url: "https://quenchagency.com/work/foxy-organic/"},
+    {name: "Ahold", url: "https://quenchagency.com/work/ahold/"},
+    {name: "Hershey", url: "https://quenchagency.com/work/hershey/"},
+    {name: "Jarlsberg", url: "https://quenchagency.com/work/jarlsberg/"},
+    {name: "Herr's", url: "https://quenchagency.com/work/herrs/"},
+    {name: "Sun Maid", url: "https://quenchagency.com/work/sun-maid/"},
+    {name: "House-Autry", url: "https://quenchagency.com/work/house-autry/"}
+]
+
+let textNodes = document.getElementsByTagName('*');
+
+// *** FUNCTIONS ***
+
+function generateLinkElement(brandObject){
+    return `<a href="${brandObject.url}" target="blank">${brandObject.name}</a>`
+}
+
+// *** SCRIPT ***
+
+console.log(textNodes);
