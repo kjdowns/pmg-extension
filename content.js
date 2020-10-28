@@ -1,0 +1,3 @@
+const brands = ["Yuengling", "Turkey Hill", "StarKist", "Mrs. T's", "Ortega", "Mrs Dash", "Hoss's Family", "Big Hill Ciderworks", "Cream of Wheat", "Foxy Organic", 
+                "Ahold", "Hershey", "Jarlsberg", "Herr's", "Labatt Blue", "Seagram's", "Sun Maid", "Del Monte", "House-Autry", "Lucky Leaf", "Musselman's", "Oddly-Good",
+                "Red Rose", "Salada", "Weis", "McMann's", "Bimbo"]
